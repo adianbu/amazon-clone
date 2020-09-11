@@ -29,6 +29,7 @@ function Payment() {
       //check axios and currency
       const response = await axios({
         method: "post",
+        //stripe expects the total in a currencies subunits
         // eslint-disable-next-line no-template-curly-in-string
         url: `/payments/create?total=${getBasketTotal(basket) * 100}`,
       });
@@ -73,7 +74,7 @@ function Payment() {
           type: "EMPTY_BASKET",
         });
 
-        history.replace("./orders");
+        history.replace("/orders");
       });
   };
 
