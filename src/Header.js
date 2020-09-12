@@ -14,7 +14,7 @@ function Header() {
     }
   };
   return (
-    <div className="header">
+    <div className="header" id="header">
       <Link to="/">
         <img
           className="header__logo"
@@ -46,6 +46,7 @@ function Header() {
             <span className="header__optionLineTwo">Orders</span>
           </div>
         </Link>
+
         <div className="header__option">
           <span className="header__optionLineOne">Your</span>
           <span className="header__optionLineTwo">Prime</span>

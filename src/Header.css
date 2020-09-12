@@ -58,6 +58,7 @@
 .header__nav {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .header__option {
