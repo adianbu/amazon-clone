@@ -26,12 +26,15 @@
   margin-bottom: 10px;
 }
 
-.product > img {
-  max-height: 200px;
+.product > .product__img > img {
+  max-height: 150px;
   width: 100%;
   object-fit: contain;
   margin-bottom: 15px;
   /* opacity: 1 !important; */
+}
+.product__img {
+  display: static;
 }
 
 .product > button {
